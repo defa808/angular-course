@@ -1,5 +1,5 @@
 <p>name: {{product?.name}}</p>
 <p>description: {{product?.description}}</p>
 <p>isAvailable: {{product?.isAvailable ? "Yes" : "No"}}</p>
-<p>Category: {{product?.category}}</p>
+<p>Category: {{displayCategory(product?.category)}}</p>
 <button (click)="onAddToCart()">Buy</button>

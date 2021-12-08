@@ -1,7 +1,7 @@
 <h3>{{item?.name}}</h3>
 <p>description: {{item?.description}}</p>
 <p>isAvailable: {{item?.isAvailable ? "Yes" : "No"}}</p>
-<p>Category: {{item?.category}}</p>
+<p>Category: {{displayCategory(item?.category)}}</p>
 <p>Count: {{item?.count}}</p>
 <div class="tools">
     <button (click)="onRemoveFromCart()">Remove</button>
