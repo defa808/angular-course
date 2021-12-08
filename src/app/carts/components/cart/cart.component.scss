@@ -1,0 +1,10 @@
+.tools{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
+    & button:not(:last-child) {
+        margin-right:1.25em;
+    }
+}
+

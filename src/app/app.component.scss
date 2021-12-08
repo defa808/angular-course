@@ -1,0 +1,8 @@
+.container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.container app-product-list, .container app-cart-list{
+    flex:1;
+}

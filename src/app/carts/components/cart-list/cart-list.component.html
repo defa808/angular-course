@@ -1,0 +1,7 @@
+<h2>Shop Cart</h2>
+<ng-container *ngIf="cartService.selectedProducts.length == 0;else cartListTemplate">
+    Cart List is empty.
+</ng-container>
+<ng-template #cartListTemplate>
+    <app-cart *ngFor="let item of cartService.selectedProducts; trackBy:tracByIds" [item]="item" ></app-cart>
+</ng-template>
